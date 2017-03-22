@@ -1,0 +1,2 @@
+module ChiTietNhapXuatsHelper
+end

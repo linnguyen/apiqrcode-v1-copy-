@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matb: MyString
+  maphieu: MyString
+  nameofdevice: MyString
+  macode: MyString
+
+two:
+  matb: MyString
+  maphieu: MyString
+  nameofdevice: MyString
+  macode: MyString
