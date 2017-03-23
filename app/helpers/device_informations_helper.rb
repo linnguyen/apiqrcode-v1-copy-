@@ -1,0 +1,2 @@
+module DeviceInformationsHelper
+end

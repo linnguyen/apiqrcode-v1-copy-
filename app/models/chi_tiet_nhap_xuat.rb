@@ -1,3 +1,0 @@
-class ChiTietNhapXuat < ApplicationRecord
-	
-end

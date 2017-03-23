@@ -10,15 +10,59 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170322023927) do
+ActiveRecord::Schema.define(version: 20170323033542) do
 
-  create_table "chi_tiet_nhap_xuats", force: :cascade do |t|
-    t.string   "matb"
-    t.string   "maphieu"
-    t.string   "nameofdevice"
-    t.string   "macode"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+  create_table "export_bill_details", force: :cascade do |t|
+    t.string   "qrcode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "export_bills", force: :cascade do |t|
+    t.datetime "date_of_export"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "import_bills", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "input_output_details", force: :cascade do |t|
+    t.string   "code_of_device"
+    t.string   "code_of_bill"
+    t.string   "name"
+    t.string   "unit"
+    t.integer  "amount"
+    t.string   "time_of_warranty"
+    t.string   "producer"
+    t.text     "description"
+    t.string   "qrcode"
+    t.text     "note"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "export_bill_id"
+    t.integer  "inport_bill_id"
+    t.index ["export_bill_id"], name: "index_input_output_details_on_export_bill_id"
+    t.index ["inport_bill_id"], name: "index_input_output_details_on_inport_bill_id"
+  end
+
+  create_table "lab_rooms", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "staffs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "gender"
+    t.string   "address"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,0 +1,2 @@
+module InputOutputDetailsHelper
+end

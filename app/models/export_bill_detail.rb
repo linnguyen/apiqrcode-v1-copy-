@@ -1,0 +1,2 @@
+class ExportBillDetail < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ImportBill < ApplicationRecord
+end

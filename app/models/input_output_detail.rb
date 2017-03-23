@@ -1,0 +1,2 @@
+class InputOutputDetail < ApplicationRecord
+end

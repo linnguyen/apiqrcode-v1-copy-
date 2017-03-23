@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_of_device: MyString
+  code_of_bill: MyString
+  name: MyString
+  unit: MyString
+  amount: 1
+  time_of_warranty: MyString
+  producer: MyString
+  description: MyText
+  qrcode: MyString
+  note: MyText
+
+two:
+  code_of_device: MyString
+  code_of_bill: MyString
+  name: MyString
+  unit: MyString
+  amount: 1
+  time_of_warranty: MyString
+  producer: MyString
+  description: MyText
+  qrcode: MyString
+  note: MyText
