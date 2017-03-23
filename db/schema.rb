@@ -10,18 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323045137) do
+ActiveRecord::Schema.define(version: 20170323074650) do
 
   create_table "export_bill_details", force: :cascade do |t|
     t.string   "qrcode"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "export_bill_id"
+    t.index ["export_bill_id"], name: "index_export_bill_details_on_export_bill_id"
   end
 
   create_table "export_bills", force: :cascade do |t|
     t.datetime "date_of_export"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "staff_id"
+    t.index ["staff_id"], name: "index_export_bills_on_staff_id"
   end
 
   create_table "import_bills", force: :cascade do |t|
@@ -43,7 +47,9 @@ ActiveRecord::Schema.define(version: 20170323045137) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "export_bill_id"
+    t.integer  "import_bill_id"
     t.index ["export_bill_id"], name: "index_input_output_details_on_export_bill_id"
+    t.index ["import_bill_id"], name: "index_input_output_details_on_import_bill_id"
   end
 
   create_table "lab_rooms", force: :cascade do |t|
@@ -59,8 +65,10 @@ ActiveRecord::Schema.define(version: 20170323045137) do
     t.string   "telephone"
     t.string   "email"
     t.string   "position"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "lab_room_id"
+    t.index ["lab_room_id"], name: "index_staffs_on_lab_room_id"
   end
 
 end
