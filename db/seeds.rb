@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-InputOutputDetail.create(code_of_device: "D01", nameofdevice: "Dell")
+InputOutputDetail.create(code_of_device: "D01", name: "Dell")
