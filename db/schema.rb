@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323074650) do
+ActiveRecord::Schema.define(version: 20170324043229) do
 
   create_table "export_bill_details", force: :cascade do |t|
     t.string   "qrcode"
@@ -48,6 +48,9 @@ ActiveRecord::Schema.define(version: 20170323074650) do
     t.datetime "updated_at",       null: false
     t.integer  "export_bill_id"
     t.integer  "import_bill_id"
+    t.string   "country"
+    t.datetime "date_of_produce"
+    t.text     "digital"
     t.index ["export_bill_id"], name: "index_input_output_details_on_export_bill_id"
     t.index ["import_bill_id"], name: "index_input_output_details_on_import_bill_id"
   end
