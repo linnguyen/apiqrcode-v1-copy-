@@ -3,4 +3,5 @@ Rails.application.routes.draw do
  # resources :input_output_details
  # resources :device_informations
  get 'device_informations/api/:qrcode' => 'device_informations#show_info'
+ resources :inventories
 end
