@@ -12,6 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20170327044655) do
 
+  create_table "chi_tiet_nhap_xuats", force: :cascade do |t|
+    t.string   "matb"
+    t.string   "maphieu"
+    t.string   "nameofdevice"
+    t.string   "macode"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
   create_table "export_bill_details", force: :cascade do |t|
     t.string   "qrcode"
     t.datetime "created_at",     null: false
@@ -47,12 +56,10 @@ ActiveRecord::Schema.define(version: 20170327044655) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "export_bill_id"
-    t.integer  "import_bill_id"
     t.string   "country"
     t.datetime "date_of_produce"
     t.text     "digital"
     t.index ["export_bill_id"], name: "index_input_output_details_on_export_bill_id"
-    t.index ["import_bill_id"], name: "index_input_output_details_on_import_bill_id"
   end
 
   create_table "inventories", force: :cascade do |t|

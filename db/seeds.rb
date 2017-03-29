@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-l = LabRoom.create!(name: "Lab Room 1")
-s = l.staffs.create!(name: "Nguyen Van Lin" , gender: "Nam", address: "Quang Nam", telephone: "0905227745", 
+l1= LabRoom.create!(name: "Lab Room 1")
+l2= LabRoom.create!(name: "Lab Room 2")
+s = l2.staffs.create!(name: "Nguyen Van Lin" , gender: "Nam", address: "Quang Nam", telephone: "0905227745", 
 	email: "nguyenvanlin01041994@gmail.com", position: "Giao Vien")
 e = s.export_bills.create!(date_of_export: "23/3/2017")
 e.input_output_details.create(code_of_device: "D001", name: "Dell Voutro", unit: "pc", amount: 5, 

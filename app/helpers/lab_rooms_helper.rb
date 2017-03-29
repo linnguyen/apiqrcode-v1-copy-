@@ -1,0 +1,2 @@
+module LabRoomsHelper
+end
