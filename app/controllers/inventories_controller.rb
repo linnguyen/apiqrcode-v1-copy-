@@ -1,5 +1,6 @@
 class InventoriesController < ApplicationController
 	def create
+		byebug
 		inventory = Inventory.create(inventory_params)
 		if inventory.save
 			render json: inventory, status: :created
