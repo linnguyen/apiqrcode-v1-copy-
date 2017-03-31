@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170327044655) do
+ActiveRecord::Schema.define(version: 20170331062105) do
 
   create_table "chi_tiet_nhap_xuats", force: :cascade do |t|
     t.string   "matb"
@@ -63,6 +63,9 @@ ActiveRecord::Schema.define(version: 20170327044655) do
   end
 
   create_table "inventories", force: :cascade do |t|
+    t.string   "code_of_device"
+    t.integer  "actual_amount"
+    t.text     "note"
     t.datetime "date_of_inventory"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false

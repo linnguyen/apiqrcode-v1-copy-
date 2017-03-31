@@ -4,10 +4,8 @@ one:
   code_of_device: MyString
   actual_amount: 1
   note: MyText
-  date_of_inventory: 2017-03-31 13:20:20
 
 two:
   code_of_device: MyString
   actual_amount: 1
   note: MyText
-  date_of_inventory: 2017-03-31 13:20:20
