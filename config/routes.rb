@@ -5,6 +5,6 @@ Rails.application.routes.draw do
  get 'api/device_informations/:qrcode' => 'device_informations#show_info'
  get 'api/lab_rooms' => 'lab_rooms#index'
  post 'api/inventories' => 'inventories#create'
- resources :inventories
+ # resources :inventories
  # resources :lab_rooms
 end
