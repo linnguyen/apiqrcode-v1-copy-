@@ -10,8 +10,7 @@
 </head>
 <body>
 <div class="sidebar-nav">
-    <ul class="nav nav-list"> 
-      <li class="nav-header">Navigation</li>        
+    <ul class="nav nav-list">      
       <li class="active"><a href="index"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
       <li><a href="#"><i class="glyphicon glyphicon-edit"></i> Add Blog Post</a></li>
       <li><a href="#"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
@@ -28,38 +27,22 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-        <th>City</th>
-        <th>Country</th>
+        <th>Device code</th>
+        <th>Actual Amount</th>
+        <th>Note</th>
+        <th>Lab Room</th>
       </tr>
     </thead>
     <tbody>
+    <% @devices.each do |device| %>
       <tr>
         <td>1</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>USA</td>
+        <td><%= device.code_of_device %></td>
+        <td><%= device.actual_amount %></td>
+        <td><%= device.note %></td>
+        <td><%= device.lab_room_id%></td>
       </tr>
-      <tr>
-        <td>2</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>USA</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>USA</td>
-      </tr>
+    <% end %>
     </tbody>
   </table>
   </div>

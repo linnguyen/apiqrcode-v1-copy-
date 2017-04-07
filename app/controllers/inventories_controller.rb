@@ -14,5 +14,6 @@ class InventoriesController < ApplicationController
 		 end
     end
     def index
+    	@devices = Inventory.all
     end
 end
