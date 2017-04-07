@@ -13,4 +13,6 @@ class InventoriesController < ApplicationController
 		   # Time.now.strftime("%d/%m/%Y %H:%M")
 		 end
     end
+    def index
+    end
 end

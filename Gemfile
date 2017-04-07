@@ -34,8 +34,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# ***********************************************
 # JsonApi adapter
 gem 'active_model_serializers', '~> 0.10.0'
+# Boostrap gem
+gem 'bootstrap-sass', '3.3.6'
+# ***********************************************
 
 group :development, :test do
   gem 'sqlite3'
