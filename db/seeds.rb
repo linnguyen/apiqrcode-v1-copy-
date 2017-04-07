@@ -5,8 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 l1= LabRoom.create!(name: "Lab Room 1")
 l2= LabRoom.create!(name: "Lab Room 2")
+l3= LabRoom.create!(name: "Phong Thuc Hanh May")
+l3= LabRoom.create!(name: "Phong Thuc Hanh Dien")
+l3= LabRoom.create!(name: "Phong Thuc Hanh Du Lich")
+l3= LabRoom.create!(name: "Phong Thuc Hanh Co Khi")
+l3= LabRoom.create!(name: "Phong Thuc Hanh Moc")
 s1 = l1.staffs.create!(name: "Nguyen Van Lin" , gender: "Nam", address: "Quang Nam", telephone: "0905227745", 
 	email: "nguyenvanlin01041994@gmail.com", position: "Giao Vien")
 s2 = l2.staffs.create!(name: "Nguyen Van Vuong" , gender: "Nam", address: "Quang Ngai", telephone: "0905227745", 
