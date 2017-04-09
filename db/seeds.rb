@@ -23,9 +23,8 @@ e2 = s2.export_bills.create!(date_of_export: "23/3/2017")
 e1.input_output_details.create(code_of_device: "D001", name: "Dell Voutro", unit: "pc", amount: 5, 
 	time_of_warranty: "3 years", producer: "Dell corporation", description: "This is a computer for IT department",
 	qrcode: "2017D001CNTT", country: "Germany", date_of_produce: "12/3/2017",
-	digital: "Socket của CPU (Các kiểu socket như 478, 775, 1155... thông số này rất 
-	quan trọng khi bạn muốn nâng cấp CPU của mình. Bạn không thể đem 1 chip CPU socket
-	 775 gắn lên socket khác 1155, 478...")
+	digital: " Với phương châm mang trải nghiệm selfie tốt nhất đến với người dùng, điện thoại F3 Plus trang bị camera  trước kép, một 16MP và một 8MP duoc khong xem nhu la mot trong kis tu hay"
+     )
 e1.input_output_details.create!(code_of_device: "A001", name: "Asus", unit: "pc", amount: 7, 
 	time_of_warranty: "1 years", producer: "Asus company", description: "This is a computer for serving education and lecture",
 	qrcode: "2017A001CNTT", country: "USA", date_of_produce: "15/12/2006")
