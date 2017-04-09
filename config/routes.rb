@@ -8,4 +8,5 @@ Rails.application.routes.draw do
  post 'api/inventories' => 'inventories#create'
  resources :inventories
  # resources :lab_rooms
+ resources :static_pages
 end
