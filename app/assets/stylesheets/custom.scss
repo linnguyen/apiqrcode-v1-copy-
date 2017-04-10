@@ -209,7 +209,7 @@ footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', s
      background-color:#f63e28;
  }
 
- /* Qr code */
+ /* Qr code api */
 
  table.qr-code {
   border-width: 0;
@@ -224,13 +224,13 @@ table.qr-code td {
   border-collapse: collapse;
   padding: 0;
   margin: 0;
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
 }
 table.qr-code td.black { background-color: #000; }
 table.qr-code td.white { background-color: #fff; }
 
-/* QR code page */
+/* Qr code page custom */
 #inputText {
     margin: 30px;
 }

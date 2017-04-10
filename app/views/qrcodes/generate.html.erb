@@ -16,23 +16,21 @@
                 <div class="col-sm-8 col-md-6 well" id="result">
                      <div class="form-group">
                       <table class="qr-code">
-                      <% if @qr.present? %>
-                      <% @qr.modules.each_index do |x| %>
-                      <tr>
-                       <% @qr.modules.each_index do |y| %>
-                       <% if @qr.dark?(x,y) %>
-                       <td class="black"/>
-                       <% else %>
-                       <td class="white"/>
-                       <% end %>
-                       <% end %>
-                       </tr>
-                       <% end %>
-                       <% end %>
+                        <% if @qr.present? %>
+                          <% @qr.modules.each_index do |x| %>
+                           <tr>
+                           <% @qr.modules.each_index do |y| %>
+                           <% if @qr.dark?(x,y) %>
+                           <td class="black"/>
+                           <% else %>
+                           <td class="white"/>
+                           <% end %>
+                           <% end %>
+                           </tr>
+                           <% end %>
+                         <% end %>
                        </table>
-                      <br />
-                      <br />
-                     </div>
+                    </div>
                 </div>
              </div>
         </div>
