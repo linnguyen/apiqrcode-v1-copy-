@@ -14,7 +14,7 @@ class InventoriesController < ApplicationController
 		 end
     end
     def index
-    	@devices = Inventory.all
+    	@devices = Inventory.paginate(page: params[:page], :per_page => 8)
     end
     def show
     end

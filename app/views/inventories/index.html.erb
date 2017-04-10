@@ -1,5 +1,4 @@
 <div id="page-wrapper">
-
         <div class="container-fluid">
             <div class="row" id="main" >
                 <div class="col-sm-12 col-md-12 well" id="content">
@@ -19,6 +18,8 @@
                            </thead>
                            <tbody>
                            <% i=0 %>
+                           <% if @devices.any? %>
+                           <%= will_paginate @devices, :class => "pagination" %>
                            <% @devices.each do |device| %>
                            <tr>
                                <td><%= i+=1 %></td>
@@ -29,6 +30,7 @@
                                <td></td>
                                <td class="text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
                            </tr>
+                           <% end %>
                            <% end %>
                           </tbody>
                        </table>

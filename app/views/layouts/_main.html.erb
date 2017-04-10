@@ -1,9 +1,8 @@
 <div id="throbber" style="display:none; min-height:120px;"></div>
 <div id="noty-holder"></div>
 <div id="wrapper">
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Navigation -->
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style= "background-color: #00BCD4;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -32,7 +31,7 @@
             </li>
         </ul>
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color: #00E5FF;">
+        <div class="collapse navbar-collapse navbar-ex1-collapse" style="">
             <ul class="nav navbar-nav side-nav">
                 <li>
                     <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> KIỂM KÊ <i class="fa fa-fw fa-angle-down pull-right"></i></a>
@@ -51,15 +50,21 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>  TẠO MÃ QR</a>
+                    <%= link_to qrcodes_path do %>
+                    <i class="fa fa-fw fa-user-plus"></i>  TẠO MÃ QR
+                    <% end %>
                 </li>
                 <li>
                     <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> QUẢN LÍ PHÔI LIỆU</a>
                 </li>
                 <li>
-                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                    <%= link_to inventories_path do %>
+                    <i class="fa fa-fw fa-user-plus"></i>  KIỂM KÊ
+                    <% end %>
                 </li>
-            </ul>
+             </ul>
         </div>
         <!-- /.navbar-collapse -->
-    </nav>
+ </nav>
+
+ 
