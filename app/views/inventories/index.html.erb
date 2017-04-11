@@ -19,7 +19,6 @@
                            <tbody>
                            <% i=0 %>
                            <% if @devices.any? %>
-                           <%= will_paginate @devices, :class => "pagination" %>
                            <% @devices.each do |device| %>
                            <tr>
                                <td><%= i+=1 %></td>
@@ -31,6 +30,7 @@
                                <td class="text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
                            </tr>
                            <% end %>
+                           <%= will_paginate @devices %>
                            <% end %>
                           </tbody>
                        </table>
