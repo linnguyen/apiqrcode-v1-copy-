@@ -5,7 +5,7 @@
                 <div class="col-sm-12 col-md-4 well" id="inputText">
                       <%= form_tag qrcodes_path do |f| %>
                       <div class="form-group">
-                      <%= text_field_tag(:text,nil,:class => "form-control") %>
+                      <%= text_field_tag(:text,nil,:class => "form-control",:id => "code_input") %>
                       </div>
                       <div class="form-group">
                       <%= submit_tag("Generate",:class => "btn btn-large btn-primary")%>
@@ -35,3 +35,14 @@
              </div>
         </div>
 </div>
+<script>
+$(document).on("change","#code_input",function(){
+  var periods = $(this).val();
+  var text = $("#code_input").val();
+  $.ajax({
+    type: "POST",
+    url: "/qrcodes",
+    data: { periods: periods, text: text } 
+  });
+});
+</script>
