@@ -40,7 +40,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 # Boostrap gem
 gem 'bootstrap-sass', '3.3.6'
 # Pagination gem
-gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate',  '3.1.0'
 # Qr code gem
 gem 'rqrcode-with-patches', '~> 0.5.4'
 # ***********************************************
